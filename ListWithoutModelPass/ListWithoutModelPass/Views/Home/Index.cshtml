@@ -1,0 +1,22 @@
+﻿<div class="container">
+    <h2>Basic Table</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in ViewBag.ItemData)
+            {
+                <tr>
+                    <td>@data.Id</td>
+                    <td>@data.Name</td>
+                    <td>@data.City</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
